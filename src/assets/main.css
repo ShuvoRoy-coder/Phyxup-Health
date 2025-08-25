@@ -1,0 +1,17 @@
+@import './base.css';
+@import "tailwindcss";
+
+@theme {
+  --font-mont: Montserrat, sans-serif;
+  --font-inter: Inter, sans-serif;
+
+  /* color variable */
+  --color-primary: #FF7E00;
+  --color-primaryHv: #FF9A38;
+  --color-SecondaryHv: #F2F2F2;
+  --color-bdr: #E5E7EB;
+
+  --color-primaryText: #1F222C;
+  
+  --color-sectionBg1: #FEF8ED;
+}
