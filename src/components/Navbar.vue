@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import { RouterLink } from 'vue-router';
+import { ref, watch } from 'vue';
+import { RouterLink, useRoute } from 'vue-router';
 import NavLink from './Ui/NavLink.vue';
 import PrimaryButton from './Ui/PrimaryButton.vue';
 import SecondaryButton from './Ui/SecondaryButton.vue';
@@ -10,6 +10,11 @@ const showSidebar = ref(false);
 const showAlert = () => {
     alert("clicking from props")
 }
+
+const route = useRoute();
+watch(route, () => {
+    showSidebar.value = false;
+});
 
 
 </script>
@@ -37,8 +42,10 @@ const showAlert = () => {
                 </div>
 
                 <div class="flex gap-2 2xl:gap-4">
-                    <PrimaryButton primaryType="link" to="/request-demo" text="Request Demo" extra-class="min-w-[172px]" />
-                    <SecondaryButton secondaryType="button" text="Free Trial" @click="showAlert" extra-class="min-w-[172px]" />
+                    <PrimaryButton primaryType="link" to="/request-demo" text="Request Demo"
+                        extra-class="min-w-[172px]" />
+                    <SecondaryButton secondaryType="button" text="Free Trial" @click="showAlert"
+                        extra-class="min-w-[172px]" />
                 </div>
             </div>
 
@@ -71,13 +78,12 @@ const showAlert = () => {
         </nav>
 
         <!-- overlay start -->
-         <div @click="showSidebar = !showSidebar" 
+        <div @click="showSidebar = !showSidebar"
             :class="[showSidebar ? 'opacity-100 visible pointer-events-auto' : 'opacity-0 invisible pointer-events-none']"
             class="fixed inset-0 bg-black/10 z-30 backdrop-blur transition-all duration-300"></div>
         <!-- overlay end -->
-        <div
-            :class="[showSidebar ? 'translate-x-0' : 'translate-x-full']"
-          class="fixed z-50 top-0 right-0 h-screen max-w-[380px] w-full transition-all duration-300">
+        <div :class="[showSidebar ? 'translate-x-0' : 'translate-x-full']"
+            class="fixed z-50 top-0 right-0 h-screen max-w-[380px] w-full transition-all duration-300">
             <div class="bg-white h-full rounded-[8px] overflow-y-auto relative border border-bdr">
                 <div class="bg-white text-end p-2 sticky top-0 left-0">
                     <SecondaryButton secondary-type="button" @click="showSidebar = !showSidebar">
@@ -90,17 +96,18 @@ const showAlert = () => {
                 </div>
                 <div class="px-4 space-y-4">
                     <div class="flex flex-col items-start gap-2">
-                        <NavLink text="Home" url="/" />
-                        <NavLink text="Products" url="/products" />
-                        <NavLink text="Solutions" url="/solutions" />
-                        <NavLink text="Blog" url="/blog" />
-                        <NavLink text="pricing" url="/Pricing" />
-                        <NavLink text="About Us" url="/about-us" />
+                        <NavLink text="Home" url="/" @click="showSidebar = false" />
+                        <NavLink text="Products" url="/products" @click="showSidebar = false" />
+                        <NavLink text="Solutions" url="/solutions" @click="showSidebar = false" />
+                        <NavLink text="Blog" url="/blog" @click="showSidebar = false" />
+                        <NavLink text="pricing" url="/Pricing" @click="showSidebar = false" />
+                        <NavLink text="About Us" url="/about-us" @click="showSidebar = false" />
                     </div>
 
                     <div class="flex gap-2">
-                        <PrimaryButton primaryType="link" to="/" text="Request Demo" extra-class="w-1/2" />
-                        <SecondaryButton secondary-type="button" text="Free Trial" @click="showAlert" extra-class="w-1/2" />
+                        <PrimaryButton primaryType="link" to="/request-demo" text="Request Demo" extra-class="w-1/2" />
+                        <SecondaryButton secondary-type="button" text="Free Trial" @click="showAlert"
+                            extra-class="w-1/2" />
                     </div>
                 </div>
             </div>
