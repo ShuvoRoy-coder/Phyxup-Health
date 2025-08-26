@@ -40,11 +40,11 @@ import { motion } from 'motion-v';
             :initial="{ opacity: 0, y: 50 }"
             :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
             :viewport="{ once: false, amount: 0.3 }"
-            class="w-full max-w-[1224px] mx-auto py-5 md:py-9">
+            class="w-full max-w-[1200px] 2xl:max-w-[1224px] mx-auto py-5 md:pb-9">
             <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <motion.div
-                    class="w-full h-full"
+                    class="w-full aspect-auto md:aspect-square"
                     :initial="{ opacity: 0, y: 50 }"
                     :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
                     :viewport="{ once: false, amount: 0.3 }"
@@ -55,7 +55,7 @@ import { motion } from 'motion-v';
                 </motion.div>
 
                 <motion.div
-                    class="w-full h-full"
+                    class="w-full aspect-auto md:aspect-square"
                     :initial="{ opacity: 0, y: 50 }"
                     :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
                     :viewport="{ once: false, amount: 0.3 }"
@@ -66,7 +66,7 @@ import { motion } from 'motion-v';
                 </motion.div>
 
                 <motion.div
-                    class="w-full h-full"
+                    class="w-full aspect-auto md:aspect-square"
                     :initial="{ opacity: 0, y: 50 }"
                     :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
                     :viewport="{ once: false, amount: 0.3 }"
@@ -77,7 +77,7 @@ import { motion } from 'motion-v';
                 </motion.div>
 
                 <motion.div
-                    class="w-full h-full"
+                    class="w-full aspect-auto md:aspect-square"
                     :initial="{ opacity: 0, y: 50 }"
                     :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
                     :viewport="{ once: false, amount: 0.3 }"
