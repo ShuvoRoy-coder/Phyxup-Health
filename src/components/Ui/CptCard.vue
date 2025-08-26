@@ -41,7 +41,7 @@ const props = defineProps<cptCard>()
                 <div class="text-[18px] lg:text-[20px] 2xl:text-[24px]">
                     {{ text_1 }}
                 </div>
-                <div class="text-[16px] lg:text-[18px] 2xl:text-[20px]">
+                <div class="text-[15px] lg:text-[16px] 2xl:text-[20px]">
                     {{ text_2 }}
                 </div>
             </div>
