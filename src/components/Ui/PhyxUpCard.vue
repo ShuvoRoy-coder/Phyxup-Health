@@ -14,8 +14,8 @@ const props = defineProps<phyxUpCard>()
 
 <template>
     <div class="w-full space-y-6 md:space-y-10">
-        <div class="w-full drop-shadow-lg">
-            <img :src="img_src" alt="">
+        <div class="w-full drop-shadow-lg max-h-[516px]">
+            <img :src="img_src" alt="img" class="w-full h-full object-cover">
         </div>
         <div class="space-y-2 md:space-y-4">
             <div
