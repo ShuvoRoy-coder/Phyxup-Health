@@ -11,7 +11,7 @@ import { motion } from "motion-v";
             :initial="{ opacity: 0, y: 50 }"
             :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
             :viewport="{ once: false, amount: 0.3 }"
-            class="py-[100px]">
+            class="py-[50px] lg:py-[100px]">
             <SectionTitle extra-class="text-center px-4">
                 Schedule a time to meet with Sangwon
             </SectionTitle>
@@ -27,7 +27,7 @@ import { motion } from "motion-v";
                     <img src="/images/requestDemoPageBg.webp" alt="bg-img" class="w-full">
                 </div>
 
-                <div class="max-w-[1664px] w-full mx-auto pt-20 px-4 relative z-10">
+                <div class="max-w-[1664px] w-full mx-auto pt-10 lg:pt-20 px-4 relative z-10">
                     <div class="flex flex-col-reverse min-[1250px]:flex-row items-center justify-center gap-8">
                         <!-- calender image -->
                          <motion.div 

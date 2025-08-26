@@ -80,7 +80,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-    <div class="w-full bg-white py-16">
+    <div class="w-full bg-white pt-[80px] md:pt-[200px] pb-16">
         <div class="w-full max-w-[1334px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-10">
             
             <motion.div 

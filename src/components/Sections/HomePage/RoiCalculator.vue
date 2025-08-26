@@ -28,7 +28,7 @@ const total = computed(() => {
 </script>
 
 <template>
-    <div class="bg-sectionBg1 px-4 py-12">
+    <div class="bg-sectionBg1 px-4 pt-12 pb-20">
         <motion.div 
             :initial="{ opacity: 0, y: 50 }"
             :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"

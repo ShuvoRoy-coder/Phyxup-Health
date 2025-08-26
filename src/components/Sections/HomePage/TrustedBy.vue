@@ -24,7 +24,7 @@ import { motion } from "motion-v";
                 </SectionSubTitle>
             </motion.div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-10 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-6">
 
                 <div class="w-full flex flex-col gap-y-6">
                     <motion.div :initial="{ opacity: 0, y: 50 }"
