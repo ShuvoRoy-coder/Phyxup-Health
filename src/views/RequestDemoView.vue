@@ -28,7 +28,7 @@ import { motion } from "motion-v";
                 </div>
 
                 <div class="max-w-[1664px] w-full mx-auto pt-20 px-4 relative z-10">
-                    <div class="flex flex-col-reverse min-[1490px]:flex-row items-center justify-center gap-8">
+                    <div class="flex flex-col-reverse min-[1250px]:flex-row items-center justify-center gap-8">
                         <!-- calender image -->
                          <motion.div 
                             :initial="{ opacity: 0, y: 50 }"
@@ -38,7 +38,7 @@ import { motion } from "motion-v";
                             <img src="/images/Calendar.webp" alt="calendar" class="rounded-2xl drop-shadow-xl">
                          </motion.div>
     
-                         <div class="flex flex-col md:flex-row gap-12 items-center md:items-start">
+                         <div class="flex flex-col md:flex-row gap-12 items-center md:items-start w-full max-w-[800px] 2xl:max-w-[994px] shrink-0">
                              <!-- profile area start -->
                              <motion.div 
                                 :initial="{ opacity: 0, y: 50 }"
