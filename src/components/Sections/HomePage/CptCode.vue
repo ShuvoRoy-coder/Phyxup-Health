@@ -44,43 +44,47 @@ import { motion } from 'motion-v';
             <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <motion.div
+                    class="w-full h-full"
                     :initial="{ opacity: 0, y: 50 }"
                     :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
                     :viewport="{ once: false, amount: 0.3 }"
                 >
                     <CptCard :code="98975" :price="19" text_1="Reimbursement for initial setup patient education"
                         text_2="Billing Frequency: Once per Episode"
-                        extra-class="bg-[linear-gradient(145deg,rgba(89,147,234,0),rgba(255,126,0,0.2))]" />
+                        extra-class="bg-[linear-gradient(145deg,rgba(89,147,234,0)_50%,rgba(255,126,0,0.2))]" />
                 </motion.div>
 
                 <motion.div
+                    class="w-full h-full"
                     :initial="{ opacity: 0, y: 50 }"
                     :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
                     :viewport="{ once: false, amount: 0.3 }"
                 >
                     <CptCard :code="98977" :price="55" text_1="Reimbursement for device & data transmission"
                         text_2="Billing Frequency: Once per 30 days"
-                        extra-class="bg-[linear-gradient(145deg,rgba(89,147,234,0),rgba(0,178,255,0.2))]" />
+                        extra-class="bg-[linear-gradient(145deg,rgba(89,147,234,0)_50%,rgba(0,178,255,0.2))]" />
                 </motion.div>
 
                 <motion.div
+                    class="w-full h-full"
                     :initial="{ opacity: 0, y: 50 }"
                     :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
                     :viewport="{ once: false, amount: 0.3 }"
                 >
                     <CptCard :code="98980" :price="50" text_1="Reimbursement for the first 20 minutes of RTM treatment service in a month"
                     text_2="Billing Frequency: Once per Calendar Month"
-                    extra-class="bg-[linear-gradient(145deg,rgba(89,147,234,0),rgba(79,206,0,0.2))]" />
+                    extra-class="bg-[linear-gradient(145deg,rgba(89,147,234,0)_50%,rgba(79,206,0,0.2))]" />
                 </motion.div>
 
                 <motion.div
+                    class="w-full h-full"
                     :initial="{ opacity: 0, y: 50 }"
                     :inView="{ opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }"
                     :viewport="{ once: false, amount: 0.3 }"
                 >
                     <CptCard :code="98981" :price="40" text_1="Reimbursement for each additional 20 minutes of RTM treatment service in a month"
                     text_2="Billing Frequency: Multiple times per Calendar Month"
-                    extra-class="bg-[linear-gradient(145deg,rgba(89,147,234,0),rgba(255,0,229,0.2))]" />
+                    extra-class="bg-[linear-gradient(145deg,rgba(89,147,234,0)_50%,rgba(255,0,229,0.2))]" />
                 </motion.div>
 
             </div>

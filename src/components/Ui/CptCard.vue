@@ -15,7 +15,7 @@ const props = defineProps<cptCard>()
 
 
 <template>
-    <div class="px-[30px] py-[50px] sm:px-[41px] sm:py-[68px]"
+    <div class="px-[30px] py-[50px] sm:px-[41px] sm:py-[68px] h-full w-full"
         :class="props.extraClass"
                 
     >
