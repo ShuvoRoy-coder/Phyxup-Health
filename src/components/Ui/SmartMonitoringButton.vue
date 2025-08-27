@@ -25,7 +25,7 @@ const emit = defineEmits<{
   >
     <button
       class="relative z-10 w-full cursor-pointer bg-white rounded-[5px] border border-bdr inline-flex items-center justify-center gap-2
-        px-3 py-6 text-base sm:text-xl md:py-[4.3cqw] md:px-[0.8cqw] text-black md:text-[1.8cqw]
+        px-2 py-3 text-sm sm:py-[4cqw] sm:px-[0.7cqw] text-black sm:text-[1.7cqw]
         transition-all duration-300 hover:bg-SecondaryHv"
       :class="props.extraClass"
       @click="emit('click')"
